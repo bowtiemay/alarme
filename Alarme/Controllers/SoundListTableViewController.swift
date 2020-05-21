@@ -88,7 +88,7 @@ class SoundListTableViewController: UITableViewController {
             tableView.deselectRow(at: indexPath, animated: true)
         }
         let sound = sounds.getSound(at: indexPath.row)
-        performSegue(withIdentifier: K.Segue.goToAlarmEdit, sender: sound)
+        performSegue(withIdentifier: K.SegueFrom.SoundList.saveToAlarmEdit, sender: sound)
     }
     
 }

@@ -21,6 +21,15 @@ class AlarmListTableViewController: UITableViewController {
     func configureTableView() {
         tableView.hideEmptyCells()
     }
+    
+    //MARK: - Navigation
+    
+    @IBAction func unwindCancelFromAlarmEdit(_ unwindSegue: UIStoryboardSegue) {
+    }
+    
+    @IBAction func unwindSaveFromAlarmEdit(_ unwindSegue: UIStoryboardSegue) {
+        
+    }
 
     // MARK: - Table view data source
 

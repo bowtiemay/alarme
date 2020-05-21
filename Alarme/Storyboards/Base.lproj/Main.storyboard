@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uTQ-Kb-CIV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uTQ-Kb-CIV">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -34,6 +34,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Alarms" id="LWE-kQ-LfM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BLb-BP-QfY"/>
                         <barButtonItem key="leftBarButtonItem" title="Settings" style="done" id="vMm-z4-1c2">
                             <connections>
                                 <segue destination="IXy-kv-ejt" kind="show" id="tTW-w2-XiF"/>
@@ -50,11 +51,11 @@
             </objects>
             <point key="canvasLocation" x="13622" y="907"/>
         </scene>
-        <!--Edit Alarm-->
+        <!--Alarm Edit-->
         <scene sceneID="HTj-VZ-elI">
             <objects>
-                <tableViewController id="TOI-0W-0nc" userLabel="Edit Alarm" customClass="AlarmEditTableViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="M33-RP-AgK">
+                <tableViewController id="TOI-0W-0nc" userLabel="Alarm Edit" customClass="AlarmEditTableViewController" customModule="Alarme" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="12" estimatedSectionHeaderHeight="-1" sectionFooterHeight="12" estimatedSectionFooterHeight="-1" id="M33-RP-AgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="color-bg"/>
@@ -63,7 +64,7 @@
                             <tableViewSection id="42h-Ra-DQJ">
                                 <cells>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="260" id="o2h-c1-ERQ">
-                                        <rect key="frame" x="0.0" y="17.666666030883789" width="414" height="260"/>
+                                        <rect key="frame" x="0.0" y="12" width="414" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o2h-c1-ERQ" id="U3g-hr-Mp5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
@@ -100,21 +101,21 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Repeat alarm on:" id="wRn-Wl-edu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="repeatDaysCell" rowHeight="50" id="zlL-r6-cWs" userLabel="Repeat Days Cell">
-                                        <rect key="frame" x="0.0" y="333" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="repeatDaysCell" rowHeight="60" id="zlL-r6-cWs" userLabel="Repeat Days Cell">
+                                        <rect key="frame" x="0.0" y="322" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zlL-r6-cWs" id="aq4-he-1Yv">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-k3-OO2">
-                                                    <rect key="frame" x="30" y="0.0" width="354" height="50"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-k3-OO2">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="60"/>
                                                     <subviews>
                                                         <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfU-By-3iX" userLabel="Mon">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="47.333333333333336" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-4y-0hR">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.333333333333336" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="ACa-4y-0hR" secondAttribute="height" multiplier="1:1" id="6YI-Xh-yTA"/>
                                                                     </constraints>
@@ -134,10 +135,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmy-f0-lew" userLabel="Tue">
-                                                            <rect key="frame" x="52" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="54.333333333333329" y="0.0" width="47.666666666666671" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0l-ft-q7k">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.666666666666664" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="K0l-ft-q7k" secondAttribute="height" multiplier="1:1" id="9qH-AW-v4t"/>
                                                                     </constraints>
@@ -157,10 +158,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxR-JI-dmx" userLabel="Wed">
-                                                            <rect key="frame" x="104" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="108.99999999999999" y="0.0" width="47.333333333333329" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mn2-no-tus">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.333333333333336" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="Mn2-no-tus" secondAttribute="height" multiplier="1:1" id="d61-y5-wUj"/>
                                                                     </constraints>
@@ -180,10 +181,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzn-nh-ETO" userLabel="Thu">
-                                                            <rect key="frame" x="156" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="163.33333333333334" y="0.0" width="47.333333333333343" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJZ-x4-RzE">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.333333333333336" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="qJZ-x4-RzE" secondAttribute="height" multiplier="1:1" id="ZRY-u0-63W"/>
                                                                     </constraints>
@@ -203,10 +204,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQy-67-reR" userLabel="Fri">
-                                                            <rect key="frame" x="208" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="217.66666666666666" y="0.0" width="47.333333333333343" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOY-bl-uce">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.333333333333336" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="XOY-bl-uce" secondAttribute="height" multiplier="1:1" id="hWe-Lp-mbt"/>
                                                                     </constraints>
@@ -226,10 +227,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulb-nW-Gjl" userLabel="Sat">
-                                                            <rect key="frame" x="260" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="272" y="0.0" width="47.666666666666686" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-1Y-VLf">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.666666666666664" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="Lgo-1Y-VLf" secondAttribute="height" multiplier="1:1" id="0bL-IA-Vci"/>
                                                                     </constraints>
@@ -249,10 +250,10 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyF-Iw-Fxp" userLabel="Sun">
-                                                            <rect key="frame" x="312" y="0.0" width="42" height="50"/>
+                                                            <rect key="frame" x="326.66666666666669" y="0.0" width="47.333333333333314" height="60"/>
                                                             <subviews>
                                                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ky-i7-eTb">
-                                                                    <rect key="frame" x="0.0" y="4" width="42" height="42"/>
+                                                                    <rect key="frame" x="0.0" y="6.3333333333333321" width="47.333333333333336" height="47.333333333333343"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="4ky-i7-eTb" secondAttribute="height" multiplier="1:1" id="SKQ-VW-PrQ"/>
                                                                     </constraints>
@@ -275,8 +276,8 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qc6-k3-OO2" firstAttribute="leading" secondItem="aq4-he-1Yv" secondAttribute="leading" constant="30" id="NEU-rK-PCE"/>
-                                                <constraint firstAttribute="trailing" secondItem="qc6-k3-OO2" secondAttribute="trailing" constant="30" id="Q2d-iQ-Kzn"/>
+                                                <constraint firstItem="qc6-k3-OO2" firstAttribute="leading" secondItem="aq4-he-1Yv" secondAttribute="leading" constant="20" id="NEU-rK-PCE"/>
+                                                <constraint firstAttribute="trailing" secondItem="qc6-k3-OO2" secondAttribute="trailing" constant="20" id="Q2d-iQ-Kzn"/>
                                                 <constraint firstAttribute="bottom" secondItem="qc6-k3-OO2" secondAttribute="bottom" id="eHe-Q8-Qyf"/>
                                                 <constraint firstItem="qc6-k3-OO2" firstAttribute="top" secondItem="aq4-he-1Yv" secondAttribute="top" id="mmv-ho-u3R"/>
                                             </constraints>
@@ -289,7 +290,7 @@
                             <tableViewSection id="uej-vb-Ath">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="oDq-2K-XmO" detailTextLabel="sFz-Nb-vgr" style="IBUITableViewCellStyleValue1" id="Npg-Mf-uVF">
-                                        <rect key="frame" x="0.0" y="418" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="406" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Npg-Mf-uVF" id="Kqq-ss-1av">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -314,7 +315,7 @@
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="LHP-hM-gtt">
-                                        <rect key="frame" x="0.0" y="462" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="450" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHP-hM-gtt" id="QRo-l8-n3e">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -343,7 +344,7 @@
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="il4-Kd-hQp" detailTextLabel="7nh-0N-Quc" style="IBUITableViewCellStyleValue1" id="WZV-tR-rze">
-                                        <rect key="frame" x="0.0" y="505.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="493.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WZV-tR-rze" id="kL6-eq-3TR">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
@@ -367,11 +368,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="color-bg"/>
                                         <connections>
-                                            <segue destination="ZY2-oK-f6a" kind="show" identifier="goToSoundsScene" id="gHL-Eq-wY3"/>
+                                            <segue destination="ZY2-oK-f6a" kind="show" identifier="goToSoundListScene" id="gHL-Eq-wY3"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43.5" id="ZtJ-hr-eBF">
-                                        <rect key="frame" x="0.0" y="549" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="537" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZtJ-hr-eBF" id="oIv-7N-3P0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -403,7 +404,7 @@
                                         <color key="backgroundColor" name="color-bg"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B88-OI-z7i" detailTextLabel="DpD-US-2Dn" style="IBUITableViewCellStyleValue1" id="GOI-1B-ao8">
-                                        <rect key="frame" x="0.0" y="592.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="580.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOI-1B-ao8" id="ZIO-W4-ZGy">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
@@ -435,7 +436,7 @@
                             <tableViewSection id="rSw-AK-Qmz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="44" id="EjO-D1-ECZ">
-                                        <rect key="frame" x="0.0" y="671" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="648" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EjO-D1-ECZ" id="2X0-k6-Nll">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -453,6 +454,9 @@
                                                                     <state key="normal" title="Cancel">
                                                                         <color key="titleColor" name="color-black-white"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <segue destination="laP-fd-Wyb" kind="unwind" identifier="cancelGoToAlarmListScene" unwindAction="unwindCancelFromAlarmEdit:" id="srz-GJ-qpx"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <constraints>
@@ -467,6 +471,7 @@
                                                             <subviews>
                                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-Fa-suz">
                                                                     <rect key="frame" x="0.0" y="0.0" width="167" height="44"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                                     <state key="normal" title="Save" backgroundImage="options-bg">
                                                                         <color key="titleColor" name="color-text-white"/>
                                                                     </state>
@@ -475,6 +480,9 @@
                                                                             <integer key="value" value="20"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <segue destination="laP-fd-Wyb" kind="unwind" identifier="saveGoToAlarmListScene" unwindAction="unwindSaveFromAlarmEdit:" id="l4f-t4-VPj"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <constraints>
@@ -504,7 +512,9 @@
                             <outlet property="delegate" destination="TOI-0W-0nc" id="LfH-rk-cLW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Edit Alarm" id="7Ji-I3-jP4"/>
+                    <navigationItem key="navigationItem" title="Edit Alarm" id="7Ji-I3-jP4">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="qKX-94-Cut"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="alarmLabelTextField" destination="4Um-CW-p9I" id="Pkj-X9-F2x"/>
                         <outlet property="optionCell" destination="GOI-1B-ao8" id="gx3-pC-uC8"/>
@@ -522,6 +532,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y5D-qU-GO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="laP-fd-Wyb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="14431.884057971016" y="1654.6875"/>
         </scene>
@@ -540,7 +551,7 @@
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="1Ct-Vi-Zc1">
                             <connections>
                                 <action selector="didTapCancelButton:" destination="Dcp-vZ-iMf" id="L6a-Sl-7gN"/>
-                                <segue destination="Tca-A8-jzV" kind="unwind" identifier="goToSettingsScene" unwindAction="unwindToSettings:" id="L7m-30-3u3"/>
+                                <segue destination="Tca-A8-jzV" kind="unwind" identifier="cancelGoToSettingsScene" unwindAction="unwindCancelFromUpgrade:" id="L7m-30-3u3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -633,7 +644,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="color-bg"/>
                                 <connections>
-                                    <segue destination="wgc-AF-Lyj" kind="unwind" identifier="goToAlarmEditScene" unwindAction="unwindToAlarmEdit:" id="Irg-6N-htz"/>
+                                    <segue destination="wgc-AF-Lyj" kind="unwind" identifier="saveGoToAlarmEditScene" unwindAction="unwindSaveFromSounds:" id="Irg-6N-htz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

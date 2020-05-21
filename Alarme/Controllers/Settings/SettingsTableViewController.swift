@@ -23,8 +23,7 @@ class SettingsTableViewController: UITableViewController {
     
     //MARK: - Upgrade methods
     
-    @IBAction func unwindToSettings(_ unwindSegue: UIStoryboardSegue) {
-        
+    @IBAction func unwindCancelFromUpgrade(_ unwindSegue: UIStoryboardSegue) {
     }
     
     //MARK: - Style Preference

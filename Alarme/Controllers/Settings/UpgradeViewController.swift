@@ -18,7 +18,7 @@ class UpgradeViewController: UIViewController {
     //MARK: - Navigation
     
     @IBAction func didTapCancelButton(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: K.Segue.goToSettings, sender: sender)
+        performSegue(withIdentifier: K.SegueFrom.Upgrade.cancelToSettings, sender: sender)
     }
     
 }

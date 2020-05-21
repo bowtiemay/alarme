@@ -14,7 +14,7 @@ class AlarmEditTableViewController: UITableViewController {
     var selectedSound: Sound?
     let keyboardManager = KeyboardManager()
     var repeatDays  = [Int: String]()
-    var days = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri", 6: "Sat", 7: "Sun"]
+    let days = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri", 6: "Sat", 7: "Sun"]
     let weekend = [6: "Sat", 7: "Sun"]
     let weekday = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri"]
     
@@ -62,7 +62,7 @@ class AlarmEditTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToAlarmEdit(_ unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindSaveFromSounds(_ unwindSegue: UIStoryboardSegue) {
         updateSelectedSoundName()
     }
     

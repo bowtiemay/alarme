@@ -30,11 +30,19 @@ struct K {
         static let repeatDaysCell = "repeatDaysCell"
     }
     
-    struct Segue {
-        static let goToAlarmEdit = "goToAlarmEditScene"
-        static let goToSounds = "goToSoundsScene"
-        static let goToOptions = "goToOptionsScene"
-        static let goToSettings = "goToSettingsScene"
+    struct SegueFrom {
+        struct SoundList {
+            static let saveToAlarmEdit = "saveGoToAlarmEditScene"
+        }
+        struct Upgrade {
+            static let cancelToSettings = "cancelGoToSettingsScene"
+        }
+        struct AlarmEdit {
+            static let toSoundList = "goToSoundListScene"
+            static let toOptions = "goToOptionsScene"
+            static let cancelToAlarmList = "cancelGoToAlarmListScene"
+            static let saveToAlarmList = "saveGoToAlarmListScene"
+        }
     }
     
     struct Sound {
