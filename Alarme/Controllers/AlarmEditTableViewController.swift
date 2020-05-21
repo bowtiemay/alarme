@@ -13,8 +13,10 @@ class AlarmEditTableViewController: UITableViewController {
     var alarm: Alarm?
     var selectedSound: Sound?
     let keyboardManager = KeyboardManager()
-    var repeatDays = [String]()
-    let days = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri", 6: "Sat", 7: "Sun"]
+    var repeatDays  = [Int: String]()
+    var days = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri", 6: "Sat", 7: "Sun"]
+    let weekend = [6: "Sat", 7: "Sun"]
+    let weekday = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri"]
     
     @IBOutlet var soundLabel: UILabel!
     @IBOutlet var optionLabel: UILabel!
@@ -32,7 +34,7 @@ class AlarmEditTableViewController: UITableViewController {
         keyboardManager.dismissKeyboardOnTapAnywhere(on: self.view)
     }
     
-    //MARK: - Repeat Methods
+    //MARK: - Repeat methods
     
     @IBAction func repeatDaysButtonTapped(_ sender: UIButton) {
         repeatDaysLabel.text = ""
@@ -42,20 +44,15 @@ class AlarmEditTableViewController: UITableViewController {
             sender.setTitleColor(UIColor(named: K.Color.white), for: .selected)
         }
         if let day = days[sender.tag] {
-            if let index = repeatDays.firstIndex(of: day) {
-                repeatDays.remove(at: index)
+            if day == repeatDays[sender.tag] {
+                repeatDays.removeValue(forKey: sender.tag)
             } else {
-                repeatDays.append(day)
+                repeatDays[sender.tag] = day
             }
         }
-        for day in repeatDays {
-            repeatDaysLabel.text! += day + "  "
-        }
-        if repeatDays.isEmpty {
-            repeatDaysLabel.text = "None"
-        }
+        modifyRepeatDaysLabel(dictionary: repeatDays, label: repeatDaysLabel)
     }
-    
+
     //MARK: - Sound methods
     
     func updateSelectedSoundName() {

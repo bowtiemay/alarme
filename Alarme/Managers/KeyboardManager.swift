@@ -21,15 +21,3 @@ struct KeyboardManager {
     }
     
 }
-
-//MARK: - Text field delegate
-
-extension AlarmEditTableViewController: UITextFieldDelegate {
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        
-        return true
-    }
-    
-}

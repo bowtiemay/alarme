@@ -47,6 +47,8 @@
 		73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */; };
 		73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE624253D23002B5EE5 /* Assets.xcassets */; };
 		73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE824253D23002B5EE5 /* LaunchScreen.storyboard */; };
+		73F2C3E52476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F2C3E42476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift */; };
+		73F2C3E72476F069009E203D /* AlarmEditVC+LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F2C3E62476F069009E203D /* AlarmEditVC+LabelModifier.swift */; };
 		73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		73DEBBE624253D23002B5EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73DEBBE924253D23002B5EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73DEBBEB24253D23002B5EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F2C3E42476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmEditVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		73F2C3E62476F069009E203D /* AlarmEditVC+LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmEditVC+LabelModifier.swift"; sourceTree = "<group>"; };
 		73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,8 @@
 			children = (
 				73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */,
 				73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */,
+				73F2C3E42476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift */,
+				73F2C3E62476F069009E203D /* AlarmEditVC+LabelModifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */,
 				73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */,
 				73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */,
+				73F2C3E52476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift in Sources */,
 				7368B775246068D8009C68C4 /* SoundManager.swift in Sources */,
 				73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */,
 				73B13B4C2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift in Sources */,
@@ -373,6 +380,7 @@
 				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
 				73CC1EC12437A88B009744F1 /* SoundListCell.swift in Sources */,
 				733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */,
+				73F2C3E72476F069009E203D /* AlarmEditVC+LabelModifier.swift in Sources */,
 				7368B77924607035009C68C4 /* Sounds.swift in Sources */,
 				73B13B4A24644E1D007AE9F4 /* UITableView+HideEmptyCells.swift in Sources */,
 				73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */,
