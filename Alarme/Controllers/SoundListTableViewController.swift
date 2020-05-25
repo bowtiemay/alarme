@@ -11,7 +11,7 @@ import AVFoundation
 
 class SoundListTableViewController: UITableViewController {
     
-    var sounds = Sounds()
+    var sounds = SoundDB()
     var soundManager = SoundManager()
     
     override func viewDidLoad() {

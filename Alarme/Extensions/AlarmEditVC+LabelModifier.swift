@@ -18,7 +18,7 @@ extension AlarmEditTableViewController {
             label.text = "Weekdays"
         }
         if dictionary == weekend {
-            label.text = "Weekend"
+            label.text = "Weekends"
         }
         if dictionary.count == 7 {
             label.text = "Every day"

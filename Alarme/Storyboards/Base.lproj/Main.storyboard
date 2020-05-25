@@ -42,7 +42,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="NIF-tX-9qK">
                             <connections>
-                                <segue destination="TOI-0W-0nc" kind="show" id="LIu-jD-pwR"/>
+                                <segue destination="TOI-0W-0nc" kind="show" identifier="goToAlarmEditScene" id="LIu-jD-pwR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

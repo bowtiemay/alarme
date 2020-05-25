@@ -25,6 +25,7 @@ struct K {
     
     struct Cell {
         static let alarmCell = "alarmCell"
+        static let alarmCellNib = "AlarmListCell"
         static let soundCell = "soundCell"
         static let soundCellNib = "SoundListCell"
         static let repeatDaysCell = "repeatDaysCell"

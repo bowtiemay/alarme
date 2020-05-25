@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Sounds {
+struct SoundDB {
     
     var sounds = [Sound]()
     var count: Int {

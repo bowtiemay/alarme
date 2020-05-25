@@ -16,6 +16,4 @@ class AlarmListCell: UITableViewCell {
     @IBOutlet var repeatDaysLabel: UILabel!
     @IBOutlet var OnOffSwitch: UISwitch!
     
-    
-    
 }
