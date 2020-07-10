@@ -12,7 +12,6 @@ class AlarmEditTableViewController: UITableViewController {
     
     var alarm: Alarm?
     var selectedSound: Sound?
-    let keyboardManager = KeyboardManager()
     var repeatDays  = [Int: String]()
     let days = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri", 6: "Sat", 7: "Sun"]
     let weekend = [6: "Sat", 7: "Sun"]
@@ -29,9 +28,13 @@ class AlarmEditTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpView()
+    }
+    
+    func setUpView() {
         alarmLabelTextField.delegate = self
-        keyboardManager.dismissKeyboardOnScroll(on: self.tableView)
-        keyboardManager.dismissKeyboardOnTapAnywhere(on: self.view)
+        tableView.dismissKeyboardOnScroll()
+        tableView.dismissKeyboardOnTapAnywhere()
     }
     
     //MARK: - Repeat methods
@@ -74,6 +77,37 @@ class AlarmEditTableViewController: UITableViewController {
     
     func hideOptionCellFromTableView() {
         optionCell.isHidden = snoozeSwitch.isOn
+    }
+    
+}
+
+extension AlarmEditTableViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
+
+extension AlarmEditTableViewController {
+    
+    func modifyRepeatDaysLabel(dictionary: Dictionary<Int,String>, label: UILabel) {
+        for key in dictionary.keys.sorted() {
+            label.text! += dictionary[key]! + " "
+        }
+        if dictionary == weekday {
+            label.text = "Weekdays"
+        }
+        if dictionary == weekend {
+            label.text = "Weekends"
+        }
+        if dictionary.count == 7 {
+            label.text = "Every day"
+        }
+        if dictionary.isEmpty {
+            label.text = "None"
+        }
     }
     
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7328FE9D2465E5CC00450AA4 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */; };
 		733EDC212458B3D20020AD96 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC202458B3D20020AD96 /* Sound.swift */; };
 		733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */; };
 		733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */; };
@@ -18,6 +17,8 @@
 		73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A95244F77B800E0297D /* SettingsTableViewController.swift */; };
 		73877A98244F830D00E0297D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A97244F830D00E0297D /* Constants.swift */; };
 		73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73877A9B244F8BB000E0297D /* NavigationViewController.swift */; };
+		738A9DE224B7F4D1006E7353 /* UITableView+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A9DE124B7F4D1006E7353 /* UITableView+DismissKeyboard.swift */; };
+		738A9DE424B7F5A4006E7353 /* UIView+DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A9DE324B7F5A4006E7353 /* UIView+DismissKeyboard.swift */; };
 		7392DB0D246C3EE000F12242 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */; };
 		7392DB10246C4B9800F12242 /* TakeAPicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */; };
 		7392DB12246C4BAD00F12242 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB11246C4BAD00F12242 /* QRCode.storyboard */; };
@@ -25,8 +26,6 @@
 		7392DB16246C4C0800F12242 /* ShakePhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB15246C4C0800F12242 /* ShakePhone.storyboard */; };
 		7392DB18246C4C2E00F12242 /* EvasiveButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */; };
 		7392DB1B246C553A00F12242 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392DB1A246C553A00F12242 /* OptionsViewController.swift */; };
-		73B13B4A24644E1D007AE9F4 /* UITableView+HideEmptyCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */; };
-		73B13B4C2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */; };
 		73CC1EBD24378A1F009744F1 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */; };
 		73CC1EBE24378A1F009744F1 /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */; };
 		73CC1EC12437A88B009744F1 /* SoundListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBF2437A88B009744F1 /* SoundListCell.swift */; };
@@ -47,13 +46,10 @@
 		73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73DEBBE324253D22002B5EE5 /* Alarme.xcdatamodeld */; };
 		73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE624253D23002B5EE5 /* Assets.xcassets */; };
 		73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEBBE824253D23002B5EE5 /* LaunchScreen.storyboard */; };
-		73F2C3E52476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F2C3E42476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift */; };
-		73F2C3E72476F069009E203D /* AlarmEditVC+LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F2C3E62476F069009E203D /* AlarmEditVC+LabelModifier.swift */; };
 		73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		733EDC202458B3D20020AD96 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		733EDC222458B8920020AD96 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
 		733EDC242458B9B70020AD96 /* SoundListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTableViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +60,8 @@
 		73877A95244F77B800E0297D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		73877A97244F830D00E0297D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		73877A9B244F8BB000E0297D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		738A9DE124B7F4D1006E7353 /* UITableView+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+DismissKeyboard.swift"; sourceTree = "<group>"; };
+		738A9DE324B7F5A4006E7353 /* UIView+DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DismissKeyboard.swift"; sourceTree = "<group>"; };
 		7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
 		7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakeAPicture.storyboard; sourceTree = "<group>"; };
 		7392DB11246C4BAD00F12242 /* QRCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
@@ -71,8 +69,6 @@
 		7392DB15246C4C0800F12242 /* ShakePhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShakePhone.storyboard; sourceTree = "<group>"; };
 		7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EvasiveButton.storyboard; sourceTree = "<group>"; };
 		7392DB1A246C553A00F12242 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
-		73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HideEmptyCells.swift"; sourceTree = "<group>"; };
-		73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ShowInfoWhenEmpty.swift"; sourceTree = "<group>"; };
 		73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
 		73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
 		73CC1EBF2437A88B009744F1 /* SoundListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListCell.swift; sourceTree = "<group>"; };
@@ -95,8 +91,6 @@
 		73DEBBE624253D23002B5EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73DEBBE924253D23002B5EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73DEBBEB24253D23002B5EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73F2C3E42476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmEditVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
-		73F2C3E62476F069009E203D /* AlarmEditVC+LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlarmEditVC+LabelModifier.swift"; sourceTree = "<group>"; };
 		73FFD2482461D5F0006D5DC3 /* AlarmEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				7368B774246068D8009C68C4 /* SoundManager.swift */,
-				7328FE9C2465E5CC00450AA4 /* KeyboardManager.swift */,
 				7368B77624606929009C68C4 /* ErrorManager.swift */,
 			);
 			path = Managers;
@@ -136,10 +129,8 @@
 		7340C4152461AFCD00322353 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				73B13B4924644E1D007AE9F4 /* UITableView+HideEmptyCells.swift */,
-				73B13B4B2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift */,
-				73F2C3E42476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift */,
-				73F2C3E62476F069009E203D /* AlarmEditVC+LabelModifier.swift */,
+				738A9DE124B7F4D1006E7353 /* UITableView+DismissKeyboard.swift */,
+				738A9DE324B7F5A4006E7353 /* UIView+DismissKeyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -366,23 +357,20 @@
 				7392DB1B246C553A00F12242 /* OptionsViewController.swift in Sources */,
 				733EDC232458B8920020AD96 /* AlarmListTableViewController.swift in Sources */,
 				7368B77724606929009C68C4 /* ErrorManager.swift in Sources */,
+				738A9DE424B7F5A4006E7353 /* UIView+DismissKeyboard.swift in Sources */,
 				73FFD2492461D5F0006D5DC3 /* AlarmEditTableViewController.swift in Sources */,
 				73DEBBE524253D22002B5EE5 /* Alarme.xcdatamodeld in Sources */,
 				73DEBBDB24253D22002B5EE5 /* AppDelegate.swift in Sources */,
-				73F2C3E52476EF7B009E203D /* AlarmEditVC+TextFieldDelegate.swift in Sources */,
 				7368B775246068D8009C68C4 /* SoundManager.swift in Sources */,
 				73877A96244F77B800E0297D /* SettingsTableViewController.swift in Sources */,
-				73B13B4C2464619F007AE9F4 /* UITableView+ShowInfoWhenEmpty.swift in Sources */,
 				73DEBBDD24253D22002B5EE5 /* SceneDelegate.swift in Sources */,
 				733EDC212458B3D20020AD96 /* Sound.swift in Sources */,
-				7328FE9D2465E5CC00450AA4 /* KeyboardManager.swift in Sources */,
+				738A9DE224B7F4D1006E7353 /* UITableView+DismissKeyboard.swift in Sources */,
 				7392DB0D246C3EE000F12242 /* UpgradeViewController.swift in Sources */,
 				73877A93244F61F500E0297D /* Alarm.swift in Sources */,
 				73CC1EC12437A88B009744F1 /* SoundListCell.swift in Sources */,
 				733EDC252458B9B70020AD96 /* SoundListTableViewController.swift in Sources */,
-				73F2C3E72476F069009E203D /* AlarmEditVC+LabelModifier.swift in Sources */,
 				7368B77924607035009C68C4 /* SoundDB.swift in Sources */,
-				73B13B4A24644E1D007AE9F4 /* UITableView+HideEmptyCells.swift in Sources */,
 				73877A9C244F8BB000E0297D /* NavigationViewController.swift in Sources */,
 				73877A98244F830D00E0297D /* Constants.swift in Sources */,
 			);

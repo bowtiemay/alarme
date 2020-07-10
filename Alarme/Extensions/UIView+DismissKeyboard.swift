@@ -1,23 +1,20 @@
 //
-//  KeyboardManager.swift
+//  UIView+DismissKeyboard.swift
 //  Alarme
 //
-//  Created by Danijela Vrzan on 2020-05-08.
+//  Created by Danijela Vrzan on 2020-07-09.
 //  Copyright © 2020 Danijela Vrzan. All rights reserved.
 //
 
 import UIKit
 
-struct KeyboardManager {
+extension UIView {
     
-    func dismissKeyboardOnTapAnywhere(on view: UIView) {
+    func dismissKeyboardOnTapAnywhere() {
+        let view = UIView()
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboardOnScroll(on tableView: UITableView) {
-        tableView.keyboardDismissMode = .onDrag
     }
     
 }
