@@ -43,3 +43,17 @@ class SettingsTableViewController: UITableViewController {
     }
     
 }
+
+//extension SettingsTableViewController: Themable {
+//  func registerForTheme() {
+//    NotificationCenter.default.addObserver(self, selector: #selector(themeChanged), name: Notification.Name.init("themeChanged"), object: nil)
+//  }
+//  
+//  func unregisterforTheme() {
+//    NotificationCenter.default.removeObserver(self)
+//  }
+//  
+//  @objc func themeChanged() {
+//    
+//  }
+//}

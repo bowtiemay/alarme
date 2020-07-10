@@ -28,10 +28,10 @@ class AlarmEditTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpView()
+        configureTableView()
     }
     
-    func setUpView() {
+    func configureTableView() {
         alarmLabelTextField.delegate = self
         tableView.dismissKeyboardOnScroll()
         tableView.dismissKeyboardOnTapAnywhere()
