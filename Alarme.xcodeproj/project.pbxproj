@@ -23,11 +23,7 @@
 		738A9DE824B7F6B9006E7353 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A9DE724B7F6B9006E7353 /* Theme.swift */; };
 		738A9DEA24B7FAB5006E7353 /* UITableView+HideEmptyCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A9DE924B7FAB5006E7353 /* UITableView+HideEmptyCells.swift */; };
 		7392DB0D246C3EE000F12242 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */; };
-		7392DB10246C4B9800F12242 /* TakeAPicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */; };
-		7392DB12246C4BAD00F12242 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB11246C4BAD00F12242 /* QRCode.storyboard */; };
-		7392DB14246C4BC500F12242 /* MathProblem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB13246C4BC500F12242 /* MathProblem.storyboard */; };
-		7392DB16246C4C0800F12242 /* ShakePhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB15246C4C0800F12242 /* ShakePhone.storyboard */; };
-		7392DB18246C4C2E00F12242 /* EvasiveButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */; };
+		7392DB12246C4BAD00F12242 /* Select.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7392DB11246C4BAD00F12242 /* Select.storyboard */; };
 		7392DB1B246C553A00F12242 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7392DB1A246C553A00F12242 /* OptionsViewController.swift */; };
 		73CC1EBD24378A1F009744F1 /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */; };
 		73CC1EBE24378A1F009744F1 /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */; };
@@ -69,11 +65,7 @@
 		738A9DE724B7F6B9006E7353 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		738A9DE924B7FAB5006E7353 /* UITableView+HideEmptyCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HideEmptyCells.swift"; sourceTree = "<group>"; };
 		7392DB0C246C3EE000F12242 /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
-		7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakeAPicture.storyboard; sourceTree = "<group>"; };
-		7392DB11246C4BAD00F12242 /* QRCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
-		7392DB13246C4BC500F12242 /* MathProblem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MathProblem.storyboard; sourceTree = "<group>"; };
-		7392DB15246C4C0800F12242 /* ShakePhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShakePhone.storyboard; sourceTree = "<group>"; };
-		7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EvasiveButton.storyboard; sourceTree = "<group>"; };
+		7392DB11246C4BAD00F12242 /* Select.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Select.storyboard; sourceTree = "<group>"; };
 		7392DB1A246C553A00F12242 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		73CC1EBB24378A1F009744F1 /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
 		73CC1EBC24378A1F009744F1 /* AlarmListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
@@ -125,11 +117,7 @@
 		7327409724746AB000827ED5 /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				7392DB0F246C4B9800F12242 /* TakeAPicture.storyboard */,
-				7392DB11246C4BAD00F12242 /* QRCode.storyboard */,
-				7392DB13246C4BC500F12242 /* MathProblem.storyboard */,
-				7392DB15246C4C0800F12242 /* ShakePhone.storyboard */,
-				7392DB17246C4C2E00F12242 /* EvasiveButton.storyboard */,
+				7392DB11246C4BAD00F12242 /* Select.storyboard */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -336,7 +324,6 @@
 				73CC1EC22437A88B009744F1 /* SoundListCell.xib in Resources */,
 				73DEBBEA24253D23002B5EE5 /* LaunchScreen.storyboard in Resources */,
 				73D86154246330940001A3B1 /* Black Fedora.mp3 in Resources */,
-				7392DB18246C4C2E00F12242 /* EvasiveButton.storyboard in Resources */,
 				73D86153246330940001A3B1 /* Banana Tree.mp3 in Resources */,
 				73DEBBE724253D23002B5EE5 /* Assets.xcassets in Resources */,
 				73D86150246330940001A3B1 /* Enchanting.mp3 in Resources */,
@@ -346,12 +333,9 @@
 				73D86151246330940001A3B1 /* Make it Snappy.mp3 in Resources */,
 				73DEBBE224253D22002B5EE5 /* Main.storyboard in Resources */,
 				73D8614F246330940001A3B1 /* Mr. Mason.mp3 in Resources */,
-				7392DB10246C4B9800F12242 /* TakeAPicture.storyboard in Resources */,
-				7392DB14246C4BC500F12242 /* MathProblem.storyboard in Resources */,
 				73D86156246330940001A3B1 /* Fields of Joy.mp3 in Resources */,
 				73CC1EBE24378A1F009744F1 /* AlarmListCell.xib in Resources */,
-				7392DB16246C4C0800F12242 /* ShakePhone.storyboard in Resources */,
-				7392DB12246C4BAD00F12242 /* QRCode.storyboard in Resources */,
+				7392DB12246C4BAD00F12242 /* Select.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
